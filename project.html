@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Project</title>
+</head>
+<body>
+    <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">Rashmitha</p>
+            <span>.</span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="about.html" class="nav-link">About</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="project.html" class="nav-link active-link">Projects</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="internship.html" class="nav-link">internship</a>
+                    <div class="circle"></div>
+                </li>
+
+                <li class="nav_list">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-button">
+           <button class="btn" id="downloadCVBtn" onclick="toggleResume()">View my resume</button>
+            <div id="pdfViewerContainer" style="display: none;">
+                <!-- Embedding PDF from Google Drive using iframe -->
+                <embed src="https://drive.google.com/file/d/1TvrnYWmxDa4V9x2X9Zm6RAB_WjkrguHO/view?usp=sharing" width="100%" height="600px"></iframe>
+            </div>
+            <div id="pdfViewerContainer"></div>
+
+        </div>
+        
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+    <section class="section" id="projects">
+        <div class="top-header">
+            <h1 class="head">Projects</h1>
+        </div>
+        <div class="project-container">
+          <div class="project-box">
+             <!----<i class="uil uil-briefcase-alt"></i>-->
+              <!--<h3>Completed</h3>-->
+             <h3> Real-time chat application</h3>
+              <!--<label>Real-time chat application</label>-->
+          </div>
+          <div class="project-box">
+              <!--<i class="uil uil-users-alt"></i>-->
+              <h3>Resume-Builder</h3>
+              
+          </div>
+          <div class="project-box">
+              <!--<i class="uil uil-award"></i>-->
+              <h3>Food Management</h3>
+          </div>
+        </div>
+     </section>
+     <script src="main.js"></script>
+</body>
+</html>

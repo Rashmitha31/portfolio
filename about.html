@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">Rashmitha</p>
+            <span>.</span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="about.html" class="nav-link active-link">About</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="project.html" class="nav-link">Projects</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="internship.html" class="nav-link">internship</a>
+                    <div class="circle"></div>
+                </li>
+
+                <li class="nav_list">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-button">
+           <button class="btn" id="downloadCVBtn" onclick="toggleResume()">View my resume</button>
+            <div id="pdfViewerContainer" style="display: none;">
+                <!-- Embedding PDF from Google Drive using iframe -->
+                <embed src="https://drive.google.com/file/d/1-B0axzG5LW7RQSaqW5Gfl7sRFCn5eg_A/preview" width="100%" height="600px"></iframe>
+            </div>
+            <div id="pdfViewerContainer"></div>
+
+        </div>
+        
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+        <section class="section" id="about">
+            <div class="top-header">
+              <h1 class="head">About Me</h1>
+            </div>
+            <div class="row">
+              <div class="col">
+                  <div class="about-info">
+                      <h3>My introduction</h3>
+                      <p>I am well-versed in HTML, CSS and JavaScript , and other cutting edge
+                         frameworks and libraries,which allows me to implement interactive features and backend
+                         frameworks like php and nodejs
+                      </p>
+                      <div class="about-btn">
+                        <button class="btn" id="downloadCVBtn" onclick="downloadResume()">Download my resume</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="skills-box">
+                      <div class="skills-header">
+                          <h3>Frontend</h3>
+                      </div>
+                      <div class="skills-list">
+                          <span>HTML</span>
+                          <span>CSS</span>
+                          <span>JavaScript</span>
+                          <span>Reactjs</span>
+                      </div>
+                  </div>
+                  <div class="skills-box">
+                      <div class="skills-header">
+                          <h3>Backend</h3>
+                      </div>
+                      <div class="skills-list">
+                          <span>PHP</span>
+                          <span>nodejs</span>
+                          <span>Python</span>
+                          <span>C++</span>
+                      </div>
+                  </div>
+                  <div class="skills-box">
+                      <div class="skills-header">
+                          <h3>Database</h3>
+                      </div>
+                      <div class="skills-list">
+                          <span>MySQL</span>
+                          <span>MongoDB</span>
+                      </div>
+                  </div>
+              </div>
+            </div>
+         </section>
+    </div>
+     
+     <script src="main.js"></script>
+</body>
+</html>

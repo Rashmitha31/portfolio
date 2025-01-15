@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+
+
+    <title>Portfolio website</title>
+</head>
+<body>
+   <div class="container">
+    <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">Rashmitha</p>
+            <span>.</span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="index.html" class="nav-link active-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="about.html" class="nav-link">About</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="project.html" class="nav-link">Projects</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="internship.html" class="nav-link">internship</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-button">
+           <button class="btn" id="downloadCVBtn" onclick="toggleResume()">View my resume</button>
+            <div id="pdfViewerContainer" style="display: none;">
+                <!-- Embedding PDF from Google Drive using iframe -->
+                <embed src="https://drive.google.com/file/d/1-B0axzG5LW7RQSaqW5Gfl7sRFCn5eg_A/preview" width="100%" height="600px"></iframe>
+            </div>
+            <div id="pdfViewerContainer"></div>
+
+        </div>
+        
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+       <!-- -------------- FEATURED BOX ---------------- -->
+       <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card">
+                <span>Rashmitha</span>
+            </div>
+            <div class="featured-name">
+                <p>I'm <span class="typedText"></span></p>
+            </div>
+            <div class="featured-text-info">
+                <p>Passionate fullstack developer with a passion for creating  stunning
+                   and user-friendly websites.
+                </p>
+            </div>
+            <div class="featured-text-btn">
+                <button class="btn blue-btn">Hire Me</button>
+                <button class="btn" id="downloadCVBtn" onclick="downloadResume()">Download my resume</button>
+
+            </div>
+            <div class="social_icons">
+                <!--<div class="icon"><i class="uil uil-dribbble"></i></div>-->
+                <div class="icon">
+                    <a href="https://www.linkedin.com/in/sai-baba-rashmitha-aids-3a93b5267/" target="_blank">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                </div>
+                <!--<div class="icon"><i class="uil uil-github-alt"></i></div>-->
+                <div class="icon">
+                    <a href="https://github.com/Rashmitha31" target="_blank">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+                </div>
+                
+            </div>
+          </div>
+          <div class="featured-image">
+            <div class="image">
+                <img src="image3.jpg" alt="avatar">
+            </div>
+          </div>
+          <div class="scroll-icon-box">
+            <!--<a href="#about" class="scroll-btn">
+               <i class="uil uil-mouse-alt"></i>
+                <p>Scroll Down</p>
+            </a>-->
+          </div>
+
+       </section>
+       <!-- -------------- ABOUT BOX ---------------- -->
+
+       <!-- -------------- PROJECT BOX ---------------- -->
+
+
+       <!-- -------------- CONTACT BOX ---------------- -->
+
+       
+    </main>
+
+
+    <!-- --------------- FOOTER --------------- -->
+    
+
+    </div>
+
+
+
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+       <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="main.js"></script>
+    
+</body>
+</html>
